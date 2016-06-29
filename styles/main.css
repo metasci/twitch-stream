@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Russo+One);
+
+body {
+    background-color: #ecd8c6;
+    font-family: Russo One;
+}
+
+.box {
+    margin: 20px auto;
+    width: 800px;
+}
+@media screen and (max-width: 800px) {
+    .box {
+        margin: 0;
+        width:100%;
+    }
+}
+
+.titleBox {
+    background-color: #47476b;
+    padding: 0;
+    width: 100%;
+    text-align: left;
+    display: inline-block;
+}
+h1 {
+    color: #ecd8c6;
+    font-family: Russo One;
+    font-size: 50px;
+    display: inline-block;
+}
+.titleBox .buttons {
+    margin: 15px 0;
+    float: right;
+    background: none;
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.button {
+    clear: both;
+    cursor: pointer;
+    display: fixed;
+    background-color: #ecd8c6;
+    width: 140px;
+    padding: 0 5px;
+    position: relative;
+    margin: 15px 0;
+    left: 95px;
+    transition: .2s;
+/*     float: right; */
+}
+p {
+    color: #47476b;
+    font-weight: bold;
+    font-size: 15px;
+    margin: 0;
+    text-align: right;
+    display: inline-block;
+}
+.indicator {
+    display: inline-block;
+    background-color: black;
+    height: 10px;
+    width: 30px;
+    margin: 5px 30px 5px 0;
+    vertical-align: middle;
+    border: 1px solid #47476b;
+}
+#all .indicator {
+    background-color: #c2c2d6;
+}
+#online .indicator {
+    background-color: #94b8b8;
+}
+#offline .indicator {
+    background-color: #ff9999;
+}
+
+.buttons .active, .button:hover {
+    left: 30px;
+    transition: .2s;
+}
+
+.list {
+    padding: 0;
+    margin: 0;
+}
+.list .li {
+    text-align: left;
+    margin: 5px 0;
+    padding: 5px;
+    background-color: #fff;
+    
+}
+
+img {
+    border-radius: 50%;
+}
+.list .name {
+    color: white; 
+    font-size: 16px;
+    margin: 0 0 0 3%;
+}
+
+.list .on {
+    background-color: #94b8b8;
+}
+
+.list .off {
+    background-color: #ff9999;
+}
+
+.list .game {
+    cursor: default;
+    float: right;
+    font-size: 20px;
+}
+
+.me {
+    margin: 50px 0;
+    text-align: center;
+}
+.more {
+    color: white;
+}
